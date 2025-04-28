@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Maze Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Start Menu Modal -->
+    <div id="start-menu" class="modal">
+      <div class="modal-content">
+        <h2>AI Maze Game</h2>
+        <p>Welcome to the AI Maze Game! Navigate through the maze and reach the goal.</p>
+        <div class="modal-buttons">
+          <button id="start-game" class="btn">Start Game</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="game-content" class="hidden">
+      <header>
+        <h1>AI Maze Game</h1>
+      </header>
+
+      <main>
+        <div class="main-content">
+          <div class="controls">
+            <button id="new-maze" class="btn">New Maze</button>
+            <button id="ai-player" class="btn">AI Solve</button>
+            <button id="reset-game" class="btn">Reset Game</button>
+            <button id="fullscreen-btn" class="btn">Fullscreen</button>
+            <button id="close-game" class="btn">Close Game</button>
+          </div>
+          
+          <div id="maze-container"></div>
+          
+          <div class="game-stats">
+            <div id="timer" class="stat">Time: 0s</div>
+            <div id="moves" class="stat">Moves: 0</div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Win Popup Modal -->
+      <div id="win-popup" class="modal hidden">
+        <div class="modal-content">
+          <h2>Congratulations!</h2>
+          <p id="win-message"></p>
+          <div class="modal-buttons">
+            <button id="play-again" class="btn">Play Again</button>
+            <button id="close-modal" class="btn">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
